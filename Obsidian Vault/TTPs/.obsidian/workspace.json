@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "cd78958533538904",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e654327ae873254",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50b191b819259ac5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Blackbox Exporter for Web Monitoring.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a8bed045fbe5de7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Installing Docker for use with WSL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "512548f2005a4d08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Install Docker on RHEL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dbab8aef0085fb34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Docker and Containerlab in Redhat.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8d01a3a986f5ec16",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3e9bfea5cdda0df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "388b26b2eb267017",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4830f18734ac77d0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "afd08b85625e37fb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c145e89b46669a40",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8f14d6671a7aa70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "975a97015cba7df8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Docker and Containerlab in Redhat.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "336d071e90b50176",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Docker and Containerlab in Redhat.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b7bc90be93ef5f8e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "09aad2732f858883",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SOPs-MOPs-TTPs/Docker and Containerlab in Redhat.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dbab8aef0085fb34",
+  "lastOpenFiles": [
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/blockchain-private-network-ttp.md",
+    "SOPs-MOPs-TTPs/Docker and Containerlab in Redhat.md",
+    "2024-07-17.md",
+    "Untitled.canvas",
+    "Fully Generated TTPs/Ansible/1. ansible-network-management-main-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/red-team-infrastructure-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/serverless-computing-framework-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/sdn-lab-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/honeypot-network-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/zero-trust-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/cicd-pipeline-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/terraform-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/kubernetes-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/main-tech-projects-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs/Project Possibilities/self-hosted-cloud-storage-ttp.md",
+    "Fully Generated TTPs/Unsorted Generated TTPs",
+    "Ansible Basics TTP.md",
+    "Fully Generated TTPs/Ansible/3. ansible-inventory-ttp.md",
+    "Fully Generated TTPs/Ansible/network-backup-playbook-ttp.md",
+    "Fully Generated TTPs/Ansible/security-baseline-templates-ttp.md",
+    "Fully Generated TTPs/Ansible/device-onboarding-playbook-ttp.md",
+    "Fully Generated TTPs/Ansible/image-deployment-playbook-ttp.md",
+    "Fully Generated TTPs/Ansible/containerlab-netlab-testing-ttp.md",
+    "Fully Generated TTPs/Ansible/2. ansible-basics-ttp.md",
+    "Projects/POS Web App/pos-system-development-ttps.md",
+    "Fully Generated TTPs/Ansible/ansible-roles-ttp.md",
+    "Fully Generated TTPs/Ansible/ansible-variables-ttp.md",
+    "Fully Generated TTPs/Ansible/ansible-packages-ttp.md",
+    "Fully Generated TTPs/Ansible",
+    "Fully Generated TTPs",
+    "Projects/POS Web App",
+    "Projects",
+    "Cheat Sheets",
+    "Pasted Images",
+    "SOPs-MOPs-TTPs",
+    "Pasted Images/Pasted image 20240713165020.png",
+    "Pasted Images/Pasted image 20240713164841.png"
+  ]
+}
