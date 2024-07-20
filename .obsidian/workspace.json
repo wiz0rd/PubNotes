@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "58464c22bdab855c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c54b15e7b87874d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1201951d794d3192",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c04226671293e784",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c61d0d11fb0b7fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c495aa4c424bb1b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e1e7676a6798f5cb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "321961a622dd5077",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 547.5
+  },
+  "right": {
+    "id": "930c405b926d5d79",
+    "type": "split",
+    "children": [
+      {
+        "id": "b69db2febc6e6b2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b28249188b9611c6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38120c9c9346c2b8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ddec8c0fc0bd7ee6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ed3ee40cd28c5198",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c495aa4c424bb1b2",
+  "lastOpenFiles": [
+    "Obsidian Vault/Verified TTPs/Grafana",
+    "Obsidian Vault/Verified TTPs/Linux/General",
+    "Obsidian Vault/Verified TTPs/Linux/General/Getting Started With Port Knocking.md",
+    "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+    "Obsidian Vault/Verified TTPs/Linux/RHEL/Redhat Containerlab with Docker.md",
+    "Obsidian Vault/Verified TTPs/Linux/RHEL/Redhat Containerlab with Podman.md",
+    "Obsidian Vault/Verified TTPs/Grafana/Blackbox Exporter for Web Monitoring.md",
+    "Obsidian Vault/Verified TTPs/Windows/Installing Docker Desktop for use with WSL.md",
+    "Obsidian Vault/Verified TTPs/Windows",
+    "Obsidian Vault/TTPs/SOPs-MOPs-TTPs/Getting up and running with Containerlab and WSL.md",
+    "Obsidian Vault/Verified TTPs/Linux/RHEL",
+    "Obsidian Vault/Verified TTPs/Linux/RHEL/Install Docker on RHEL.md",
+    "Obsidian Vault/Verified TTPs/Linux/Ubuntu/linux-background-processes-guide.md",
+    "Obsidian Vault/Verified TTPs/Linux/Ubuntu/Ubuntu Linux File system , Account and Group Creation.md",
+    "Obsidian Vault/Projects/POS Web App/pos-system-development-ttps.md",
+    "Untitled.md",
+    "Obsidian Vault/Verified TTPs/Linux/Ubuntu",
+    "Obsidian Vault/Verified TTPs",
+    "Obsidian Vault/Cheat Sheets/vim-vi-cheatsheet.md",
+    "Obsidian Vault/Verified TTPs/Linux",
+    "Obsidian Vault/Cheat Sheets/markdown-language-cheatsheet.md"
+  ]
+}
