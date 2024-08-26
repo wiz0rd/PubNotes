@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+                "file": "Starting-With-Containerlab-Installing-Pubkeys-and-Basic-Config-Backup.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+                "file": "Starting-With-Containerlab-Installing-Pubkeys-and-Basic-Config-Backup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
+                "file": "Starting-With-Containerlab-Installing-Pubkeys-and-Basic-Config-Backup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md"
+                "file": "Starting-With-Containerlab-Installing-Pubkeys-and-Basic-Config-Backup.md"
               }
             }
           }
@@ -146,12 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c495aa4c424bb1b2",
+  "active": "1201951d794d3192",
   "lastOpenFiles": [
+    "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
     "Obsidian Vault/Verified TTPs/Grafana",
     "Obsidian Vault/Verified TTPs/Linux/General",
     "Obsidian Vault/Verified TTPs/Linux/General/Getting Started With Port Knocking.md",
-    "Obsidian Vault/Verified TTPs/Linux/RHEL/Quick Start Guide - Three Router Topology with Containerlab and Podman on Redhat.md",
     "Obsidian Vault/Verified TTPs/Linux/RHEL/Redhat Containerlab with Docker.md",
     "Obsidian Vault/Verified TTPs/Linux/RHEL/Redhat Containerlab with Podman.md",
     "Obsidian Vault/Verified TTPs/Grafana/Blackbox Exporter for Web Monitoring.md",

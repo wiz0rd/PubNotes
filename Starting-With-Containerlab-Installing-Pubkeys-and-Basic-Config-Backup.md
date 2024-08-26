@@ -157,14 +157,12 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
   gather_facts: no
   vars:
     backup_dir: "/home/wiz0rd/Projects/git/Containerlab/Labs/ansible-6/clab-spine-leaf-topology"
-    timestamp: "{{ '%Y-%m-%d_%H-%M-%S' | strftime }}"
-
   tasks:
     - name: Backup Juniper vJunos configurations
       junipernetworks.junos.junos_config:
         backup: yes
         backup_options:
-          filename: "{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config.conf"
+          filename: "backup.conf"
           dir_path: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config"
       when: "'juniper_vjunosswitch' in group_names"
       vars:
@@ -175,7 +173,7 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
       cisco.ios.ios_config:
         backup: yes
         backup_options:
-          filename: "{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config.conf"
+          filename: "backup.conf"
           dir_path: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config"
       when: "'vr-csr' in group_names"
       vars:
@@ -186,24 +184,18 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
       cisco.nxos.nxos_config:
         backup: yes
         backup_options:
-          filename: "{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config.conf"
+          filename: "backup.conf"
           dir_path: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config"
       when: "'vr-n9kv' in group_names"
       vars:
         ansible_connection: network_cli
         ansible_network_os: nxos
 
-    - name: Create timestamped copy of configuration
-      copy:
-        src: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config.conf"
-        dest: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config_{{ timestamp }}.conf"
-      when: "'juniper_vjunosswitch' in group_names or 'vr-csr' in group_names or 'vr-n9kv' in group_names"
-
     - name: Display backup status
       debug:
         msg: 
-          - "Configuration for {{ inventory_hostname }} has been backed up to {{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config.conf"
-          - "A timestamped copy has been created at {{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}_config_{{ timestamp }}.conf"
+          - "Configuration for {{ inventory_hostname }} has been backed up to {{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/backup.conf"
+
 ```
 
 To run the playbook:
