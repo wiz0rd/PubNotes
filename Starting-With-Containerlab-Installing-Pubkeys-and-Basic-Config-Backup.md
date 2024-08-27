@@ -18,6 +18,10 @@ Before starting, ensure you have the following packages installed:
 pip install ansible ansible-pylibssh paramiko ncclient
 ansible-galaxy collection install cisco.ios cisco.nxos junipernetworks.junos
 ```
+Also make sure you add all of the keys to your known hosts
+```
+ssh-keyscan -H 172.20.20.2 172.20.20.3 172.20.20.4 172.20.20.5 172.20.20.6 172.20.20.7 >> ~/.ssh/known_hosts
+```
 
 ## Juniper Public Key Configuration
 
