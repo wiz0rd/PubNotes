@@ -18,6 +18,10 @@ Before starting, ensure you have the following packages installed:
 pip install ansible ansible-pylibssh paramiko ncclient
 ansible-galaxy collection install cisco.ios cisco.nxos junipernetworks.junos
 ```
+Also make sure you add all of the keys to your known hosts
+```
+ssh-keyscan -H 172.20.20.2 172.20.20.3 172.20.20.4 172.20.20.5 172.20.20.6 172.20.20.7 >> ~/.ssh/known_hosts
+```
 
 ## Juniper Public Key Configuration
 
@@ -157,17 +161,24 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
   gather_facts: no
   vars:
     backup_dir: "/home/wiz0rd/Projects/git/Containerlab/Labs/ansible-6/clab-spine-leaf-topology"
+    ansible_user: admin
+    ansible_ssh_private_key_file: "~/.ssh/id_rsa"
   tasks:
     - name: Backup Juniper vJunos configurations
-      junipernetworks.junos.junos_config:
-        backup: yes
-        backup_options:
-          filename: "backup.conf"
-          dir_path: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config"
+      junipernetworks.junos.junos_command:
+        commands: 
+          - show configuration
+      register: juniper_config
       when: "'juniper_vjunosswitch' in group_names"
       vars:
         ansible_connection: netconf
         ansible_network_os: junos
+
+    - name: Save Juniper configuration to file
+      copy:
+        content: "{{ juniper_config.stdout[0] }}"
+        dest: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/backup.conf"
+      when: "'juniper_vjunosswitch' in group_names"
 
     - name: Backup Cisco CSR configurations
       cisco.ios.ios_config:
@@ -175,6 +186,7 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
         backup_options:
           filename: "backup.conf"
           dir_path: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config"
+      register: cisco_csr_backup
       when: "'vr-csr' in group_names"
       vars:
         ansible_connection: network_cli
@@ -186,6 +198,7 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
         backup_options:
           filename: "backup.conf"
           dir_path: "{{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config"
+      register: cisco_nxos_backup
       when: "'vr-n9kv' in group_names"
       vars:
         ansible_connection: network_cli
@@ -195,6 +208,7 @@ Create an Ansible playbook (`backupConfigs.yml`) with the following content:
       debug:
         msg: 
           - "Configuration for {{ inventory_hostname }} has been backed up to {{ backup_dir }}/{{ inventory_hostname | regex_replace('clab-spine-leaf-topology-', '') }}/config/backup.conf"
+      when: juniper_config.changed or cisco_csr_backup.changed or cisco_nxos_backup.changed
 
 ```
 
